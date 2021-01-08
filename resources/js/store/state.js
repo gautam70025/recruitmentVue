@@ -1,0 +1,33 @@
+let state = {
+    user: JSON.parse(localStorage.getItem("gUser") || "{}"),
+    register_status: null,
+    register_errors: null,
+    register_email_errors: null,
+    login_errors: null,
+    login_status: null,
+    token: "" || localStorage.getItem("gToken"),
+    personal_information_status: null,
+    personal_information_errors: null,
+    form_step: 1,
+    barwidth: 14.28,
+    personalInfo: {},
+    language_proficiency_status: null,
+    language_proficiency_errors: null,
+    languageProficiency: {},
+    jobPosts: {},
+    educational_qualification_status: null,
+    educational_qualification_errors: null,
+    educationalQualification: {},
+    computer_knowledge_status: null,
+    computer_knowledge_errors: null,
+    computerKnowledge: {},
+    work_experience_status: null,
+    work_experience_errors: null,
+    workExperience: {},
+    document_save_status: null,
+    document_save_errors: null,
+    documentSave: {},
+    isApplied: false
+};
+
+export default state;
